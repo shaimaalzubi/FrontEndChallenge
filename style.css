@@ -124,7 +124,7 @@ button:hover{
     border-radius: 8px;
     padding: 15px 0;
     text-align: center;
-    margin: 20px 10px;
+    margin: 30px 40px;
     font-weight: bold;
     border: 2px solid #009688;
     color: #fff;
@@ -138,11 +138,34 @@ button:hover{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
-    }
-
-body{
-    background-color:#b2c9c6;
     align-content: center;
 }
 
+body{
+    background-color:#b2c9c6;
+    
+}
+
+.mystyle {
+    
+    height: 290px;
+    margin: auto;
+    border: 2px solid #3d8a76;
+    font-size: 0;
+    padding: 10px;
+    overflow: auto;
+    overflow-wrap: normal;
+    scroll-behavior: smooth;
+    width: 2500px;
+    
+    
+}
+
+
+.mystyle img:hover{
+    transform:scale(1.5);
+}
+.mystyle img {
+    
+    transition: 1s;
+}
