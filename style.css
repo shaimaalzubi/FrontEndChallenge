@@ -138,11 +138,25 @@ button:hover{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
-    }
-
-body{
-    background-color:#b2c9c6;
     align-content: center;
 }
 
+body{
+    background-color:#b2c9c6;
+    
+}
+
+.mystyle{
+
+    height: 300px;
+    display:block;
+    border: 1px solid #af744c;
+    width: 300px;
+    margin: auto;
+    width: 60%;
+    border: 5px solid #3297da;
+    padding: 10px;
+    overflow-x: auto;
+    
+
+}
