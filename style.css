@@ -133,6 +133,7 @@ button:hover{
     background-color: #009688;
 }
 
+
 .center {
     display: block;
     margin-left: auto;
@@ -148,24 +149,28 @@ body{
 
 .mystyle {
     
-    height: 290px;
+    height: auto;
+    width: auto;
     margin: auto;
-    border: 2px solid #3d8a76;
     font-size: 0;
     padding: 10px;
+    white-space: nowrap;
     overflow: auto;
     overflow-wrap: normal;
     scroll-behavior: smooth;
-    width: 2500px;
-    
+    scroll-snap-type: mandatory;
+    display: inline-block;
+    scroll-snap-align: center;
     
 }
 
 
-.mystyle img:hover{
+
+.mystyle:hover{
     transform:scale(1.5);
+    transform-origin: left;
 }
-.mystyle img {
+.mystyle {
     
     transition: 1s;
 }
