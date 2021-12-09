@@ -4,17 +4,17 @@
     font-family: sans-serif;
 }
 
+
 .banner{
     width: 100%;
     height:100vh;
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.jpg);
     background-size:cover;
     background-position:center;
-
 }
 
-.navbar{
 
+.navbar{
     width:85%;
     margin:auto;
     padding: 35px 0;
@@ -23,16 +23,15 @@
     justify-content: space-between;
 }
 
-.logo {
+
+.logo{
     width: 150px;
     height: 50px;
     cursor: pointer;
-    
 }
 
 
-.navbar ul li {
-
+.navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
@@ -40,9 +39,7 @@
 }
 
 
-
 .navbar ul li a{
-
     text-decoration: none;
     color: white;
     text-transform: uppercase;}
@@ -50,7 +47,6 @@
 
 
 .navbar ul li::after{
-
     content: '';
     height: 3px;
     width: 0;
@@ -63,7 +59,6 @@
 
 
 .navbar ul li:hover::after{
-
     width: 100%;
 }
 
@@ -74,7 +69,6 @@
     transform: translateY(-50%);
     text-align: center;
     color:#ffffff;
-
 }
 
 .content p{
@@ -98,6 +92,7 @@ button{
     overflow: hidden;
 }
 
+
 span{
     background: #009688;
     height: 100%;
@@ -110,17 +105,19 @@ span{
     transition: 0.5s;
 }
 
+
 button:hover span{
     width: 100%;
 }
+
 
 button:hover{
 
     border: none;
 }
 
-.button2 {
 
+.button2{
     border-radius: 8px;
     padding: 15px 0;
     text-align: center;
@@ -134,7 +131,7 @@ button:hover{
 }
 
 
-.center {
+.center{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -142,13 +139,14 @@ button:hover{
     align-content: center;
 }
 
+
 body{
     background-color:#b2c9c6;
     
 }
 
-.mystyle {
-    
+
+.mystyle{
     height: auto;
     width: auto;
     margin: auto;
@@ -160,17 +158,16 @@ body{
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
     display: inline-block;
-    scroll-snap-align: center;
-    
+    scroll-snap-align: center;   
 }
-
 
 
 .mystyle:hover{
     transform:scale(1.5);
     transform-origin: left;
 }
-.mystyle {
-    
+
+
+.mystyle{
     transition: 1s;
 }
