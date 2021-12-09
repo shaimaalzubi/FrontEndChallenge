@@ -7,11 +7,13 @@
     <title>Tiles</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body2">
+<body class="body2"> <!-- body tag will hold buttons and loaded images -->
     <div class="center"> 
-        <button class="button2" onclick="zoomIn()">+</button>
+        <button class="button2" onclick="zoomIn()">+</button> 
         <button class="button2" onclick="zoomOut()">-</button>
     </div>
+    <!-- loaded images will be inside <div> tag which will be created in JavaScript code -->
+    <!-- JavaScript code will create <img> tag for each chunck on the server -->
     <br>
 <script>
 /***********************************
@@ -22,10 +24,10 @@
  * web page, zoom in and zoom out buttons to the body of the web page
  * will let the user to explore pictures in depth with high resolution.
  * This is a built in tool developed manually by author, no third-party
- * no Map Libraries are used inside the JavaScript source code.
+ * no used libraries inside the JavaScript source code.
  ***********************************/
     var space = document.createElement("div"); //all images will be loaded is class space inside the body
-    space.className="mystyle";
+    space.className="imgstyle";
     document.body.appendChild(space);
         
     var link = "https://challenge-tiler.services.propelleraero.com/tiles/"; //first part of the link
