@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiles Gradual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="grdaing">
+
+
+<script>
+    var link = "https://challenge-tiler.services.propelleraero.com/tiles/3/"; //first part of the link
+    var token = "?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2hhaW1hLXpvdWJpIiwiaWF0IjoxNjM4NzU5NjE4fQ.0jxv_k-3prygVKfVFqxL1SU9VWIpq1mL3gIg1DLO70k"; //token the last part of the link
+    var space = document.createElement("div"); //all images will be loaded is class space inside the body
+    space.className="divgrad";
+    document.body.appendChild(space);
+    for (var x=0; x<8; x++){ //generate a link for each chunck
+        for (var y=0; y<8; y++){
+            var chunckUrl = link+y+'/'+x+token;
+            display(chunckUrl);
+            }
+        var childSpace = document.createElement("br");
+        childSpace.className="childSpace";
+        space.appendChild(childSpace);
+        }
+
+
+    function display(imgSrc){ //create img elements for each src given
+        var img = document.createElement("img");
+        img.src = imgSrc;
+        /*img.width = 300;
+        img.height = 300;*/
+        img.alt = "image chunck";
+        img.style="transform 0.5s ease";
+        // This next line will just add it to the <body> tag
+        space.appendChild(img);
+    }    
+
+    function zoom(event) {
+        event.preventDefault();
+
+        if (event.deltaY < 0) {
+            // Zoom in
+            scale *= event.deltaY * -2;
+        }
+        else {
+            // Zoom out
+            scale /= event.deltaY * 2;
+        }
+
+        // Restrict scale
+        scale = Math.min(Math.max(.125, scale), 4);
+
+        // Apply scale transform
+        el.style.transform = `scale(${scale})`;
+        }
+
+        let scale = 1;
+        const el = document.querySelector('body');
+        document.onwheel = zoom;
+
+
+/*
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            $(".divgrad").css({
+                width: (100+scroll/5)+"%"
+            });
+
+        });
+*/
+</script>
+    
+</body>
+</html>
