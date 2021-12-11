@@ -170,3 +170,18 @@ body{ /*style for body on all pages*/
 .imgstyle{
     transition: 1s;
 }
+
+.divgrad{
+    height: auto;
+    width: auto;
+    margin: auto;
+    font-size: 0;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: auto;
+    overflow-wrap: normal;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    display: inline-block;
+    scroll-snap-align: center;   
+  }
