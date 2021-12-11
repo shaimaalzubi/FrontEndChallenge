@@ -6,15 +6,17 @@ Part 1: I only used HTML, CSS and JavaScript to build the project.
 	No more than 3 zoom in. 
 	Extra zoom out will make image disappear.
 
-Part 2: I set the width of the <div> that contains the images to automatic so it can hold the horizontal overflow.
+Part 2: I set the width of the <div> that contains the images to automatic so it can hold the vertical and horizontal overflow.
 	No white space nor line breaks between images.
 	I used nested for loops to get images URLs.
-	I remove any images in the block before and after I click +/-.
+	I remove any images in the block before and after clicking +/-.
 	Used scale property to scale the whole block 1.5 times to the left when hovering over it.
+	I applied two finger on keyboard touch scaling. 
+	I wrote Clean Code and added documentation. 
 	
 Part 3: I am working on 'Panning' at the moment. 
 	I work to enhance the layout of the webpage and scrolling on x,y axis.
 	I will respond to comments wisley.
-	I work to write Clean Code and add documentation. 
+	
 	
 	
